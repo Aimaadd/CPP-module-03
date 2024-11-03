@@ -13,6 +13,10 @@ class ClapTrap {
         void setHitPoints(int amount);
         void setAttackDamage(int amount);
         void setEnergyPoints(int amount);
+        void getHitPoints();
+        void getEnergyPoints();
+        void getAttackDamage();
+        std::string getName();
     private :
         std::string _name;
         unsigned int _hitPoints;

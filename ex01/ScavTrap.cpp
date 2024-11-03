@@ -1,6 +1,9 @@
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap("random") {
+    setHitPoints(100);
+    setEnergyPoints(50);
+    setAttackDamage(20);
     std::cout << getName() << " Scav constructed" << std::endl;
 }
 
@@ -15,12 +18,8 @@ ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name) {
         std::cout << "Here comes " << name << " ScavTrap" << std::endl;
 }
 
-std::string ClapTrap::getName() const {
-    return _name;
-}
-
 void ScavTrap::guardGate() {
-    if (getName().empty())
+    if (ClapTrap::getName().empty())
         std::cout << "random is now in GATEKEEPER mode !" << std::endl;
     else
         std::cout << getName() << " is now in GATEKEEPER mode !" << std::endl;

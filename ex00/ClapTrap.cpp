@@ -82,3 +82,19 @@ void ClapTrap::setAttackDamage(int amount) {
 void ClapTrap::setEnergyPoints(int amount) {
     _energyPoints = amount;
 }
+
+void ClapTrap::getHitPoints() {
+    std::cout << "HP: " << _hitPoints << std::endl;
+}
+
+void ClapTrap::getEnergyPoints() {
+    std::cout << "EP: " << _energyPoints << std::endl;
+}
+
+void ClapTrap::getAttackDamage() {
+    std::cout << "AD: " << _attackDamage << std::endl;
+}
+
+std::string ClapTrap::getName() {
+    return _name;
+}
