@@ -1,6 +1,6 @@
 CXX = c++
 CXXFLAGS = -Werror -Wextra -Wall -std=c++98 #-Wpedantic
-NAME = ScavTrap
+NAME = FragTrap
 FILES = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJS = $(FILES:.cpp=.o)
 
