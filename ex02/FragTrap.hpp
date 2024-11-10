@@ -1,10 +1,11 @@
-#include "ScavTrap.hpp"
-
+#include "ClapTrap.hpp"
 
 class FragTrap : public ClapTrap {
-    public:
+    public :
         FragTrap();
-        FragTrap(const std::string& name);
-        ~FragTrap();
-        void highFivesGuys(void);
+        FragTrap(std::string name);
+        virtual ~FragTrap();
+        FragTrap(const FragTrap &copy);
+        FragTrap &operator=(const FragTrap &src);
+        void highFiveGuys();
 };

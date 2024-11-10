@@ -1,18 +1,20 @@
 #include "ScavTrap.hpp"
 
 int main() {
-    ScavTrap b;
     ScavTrap a("Cool");
+    ScavTrap b;
         // check negative values entered
-    std::cout << "=======ScavTrap a======" << std::endl;
-    a.guardGate();
+    std::cout << "=======ClapTrap a======" << std::endl;
     a.attack("Random");
     a.takeDamage(1); 
     a.takeDamage(1); 
     a.takeDamage(1);
     a.beRepaired(3);
-    std::cout << "=======ScavTrap b======" << std::endl;
-    b.guardGate();
+    a.guardGate();
+    a.attack("random");
+    a.guardGate();
+    a.attack("random");
+    std::cout << "=======ClapTrap b======" << std::endl;
     b.attack("Random");
     b.takeDamage(1); 
     b.takeDamage(1); 
