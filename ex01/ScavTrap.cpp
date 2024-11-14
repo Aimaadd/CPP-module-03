@@ -5,7 +5,7 @@ ScavTrap::ScavTrap() : ClapTrap() {
     this->_energyPoints = 50;
     this->_attackDamage = 20; 
     this->_active = 0;
-    this->name = "random";
+    this->_name = "random";
     std::cout << "Here comes the ScavTrap" << std::endl;
 }
 
